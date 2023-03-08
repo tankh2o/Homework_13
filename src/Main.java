@@ -1,14 +1,15 @@
 public class Main {
     public static void main(String[] args) {
-        Author author1 = new Author("Irwin", "Yalom");
-        Author author2 = new Author("Irwina", "Yaloma");
+        Author author = new Author("Irwin", "Yalom");
+
+        Book book = new Book("Вглядываясь в солнце", 2008, author);
+        System.out.println(" Автор - " + author.getName() + author.getFamily() + ". Произведение - " + book.getName() + " - " + book.getPublicationYear() + " года издания.");
+
+        System.out.println(author);
+        System.out.println(book);
 
 
-        if (author1.equals(author2)) {
-            System.out.println("Равны через .equals()");
-        } else {
-            System.out.println("Не равны через .equals()");
-        }
+
 
 
 
